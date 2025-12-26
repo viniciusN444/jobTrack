@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --corPrincipal: #3971C9;
+    --corContainer: #EAEAED;
+    --corContainerLista: #EEEFF2;
+    --gray: #768296;
+    --green: #47A466;
+    --yellow: #F7BE33;
+    --red: #E23F3E;
+}
+
+header{
+    background-color: var(--corPrincipal);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button{
+    background-color: var(--gray);
+    color: white;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+main{
+    background-color: var(--corContainerLista);
+}
+
+.containerJobs{
+    padding: 15px;
+}
+
+.cardJob{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cardJob h2{
+    margin-bottom: 5px;
+}
+
+.cardJob .situation{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.cardJob .situation p{
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.cardJob .situation button{
+    background-color: var(--gray);
+    color: white;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.cardJob .situation button:hover{
+    cursor: pointer;
+}
+
+#green{
+    background-color: var(--green);
+}
+#yellow{
+    background-color: var(--yellow);
+}
+#red{
+    background-color: var(--red);
+}
+
+.colors .boll{
+    background-color: red;
+    border-radius: 50%;
+}
+
