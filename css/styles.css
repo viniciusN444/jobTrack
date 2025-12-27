@@ -37,6 +37,10 @@ header button{
     outline: none;
 }
 
+header button:hover{
+    cursor: pointer;
+}
+
 main{
     background-color: var(--corContainerLista);
 }
@@ -146,6 +150,7 @@ main{
     color: var(--corContainer);
     font-weight: bold;
     padding: 5px;
+    cursor: pointer;
 }
 
 .containerInfo{
@@ -187,4 +192,31 @@ main{
 #btnCancel{
     background-color: var(--gray);
     color: black;
+}
+
+@media (min-width: 768px){
+    header{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header button{
+        padding: 10px;
+    }
+
+    .cardJob .situation{
+        flex-flow: row nowrap;
+    }
+}
+
+@media (min-width: 1200px){
+    .containerMax{
+        max-height: 100%;
+        max-width: 1200px;
+        margin: auto;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
 }

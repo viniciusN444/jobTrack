@@ -7,89 +7,89 @@
     <title>jobTrack</title>
 </head>
 <body>
-    <header>
-        <h1>JobTrack</h1>
-        <button>Adicionar Job</button>
-    </header>
+    <div class="containerMax">
+        <header>
+            <h1>JobTrack</h1>
+            <button>Adicionar Job</button>
+        </header>
+        <main>
+            <div class="containerJobs">
+                <div class="cardJob">
+                    <div class="description">
+                        <h2>Google</h2>
+                        <p>
+                            Frontend Developer
+                        </p>
+                    </div>
+                    <div class="situation">
+                        <p id="green">Oferta</p>
+                        <button>Apagar</button>
+                    </div>
+                </div>
+                <div class="cardJob">
+                    <div class="description">
+                        <h2>Meta</h2>
+                        <p>
+                            UI/UX Designer
+                        </p>
+                    </div>
+                    <div class="situation">
+                        <p id="yellow">Em entrevista</p>
+                        <button>Apagar</button>
+                    </div>
+                </div>
+                <div class="cardJob">
+                    <div class="description">
+                        <h2>Netflix</h2>
+                        <p>
+                            Software Enginner
+                        </p>
+                    </div>
+                    <div class="situation">
+                        <p id="red">Rejeitado</p>
+                        <button>Apagar</button>
+                    </div>
+                </div>
+                <div class="colors">
+                    <div class="boll blue"></div>
+                    <div class="boll green"></div>
+                    <div class="boll yellow"></div>
+                    <div class="boll red"></div>
+                </div>
+            </div>
+        </main>
+        <section class="containerAddJobs">
+            <div class="containerX">
+                <h2>Add Job</h2>
+                <button>X</button>
+            </div>
+            <div class="containerInfo">
+                <div class="campo">
+                    <label for="txtCompany">Empresa:</label>
+                    <input type="text" id="txtCompany">
+                </div>
+                <div class="campo">
+                    <label for="txtCompany">Cargo:</label>
+                    <input type="text" id="txtCompany">
+                </div>
+                <div class="campo">
+                    <label for="txtCompany">Status:</label>
+                    <select>
+                        <option selected disabled>Selecione o Status</option>
+                        <option>Aplicado</option>
+                        <option>Entrevista</option>
+                        <option>Oferta</option>
+                        <option>Rejeitada</option>
+                    </select>
+                </div>
+                <div class="containerbtns">
+                    <button id="btnSave">Salvar</button>
+                    <button id="btnCancel">Cancelar</button>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <main>
-        <div class="containerJobs">
-            <div class="cardJob">
-                <div class="description">
-                    <h2>Google</h2>
-                    <p>
-                        Frontend Developer
-                    </p>
-                </div>
-                <div class="situation">
-                    <p id="green">Oferta</p>
-                    <button>Apagar</button>
-                </div>
-            </div>
-
-            <div class="cardJob">
-                <div class="description">
-                    <h2>Meta</h2>
-                    <p>
-                        UI/UX Designer
-                    </p>
-                </div>
-                <div class="situation">
-                    <p id="yellow">Em entrevista</p>
-                    <button>Apagar</button>
-                </div>
-            </div>
-
-            <div class="cardJob">
-                <div class="description">
-                    <h2>Netflix</h2>
-                    <p>
-                        Software Enginner
-                    </p>
-                </div>
-                <div class="situation">
-                    <p id="red">Rejeitado</p>
-                    <button>Apagar</button>
-                </div>
-            </div>
-            <div class="colors">
-                <div class="boll blue"></div>
-                <div class="boll green"></div>
-                <div class="boll yellow"></div>
-                <div class="boll red"></div>
-            </div>
-        </div>
-    </main>
-
-    <section class="containerAddJobs">
-        <div class="containerX">
-            <h2>Add Job</h2>
-            <button>X</button>
-        </div>
-        <div class="containerInfo">
-            <div class="campo">
-                <label for="txtCompany">Empresa:</label>
-                <input type="text" id="txtCompany">
-            </div>
-            <div class="campo">
-                <label for="txtCompany">Cargo:</label>
-                <input type="text" id="txtCompany">
-            </div>
-            <div class="campo">
-                <label for="txtCompany">Status:</label>
-                <select>
-                    <option selected disabled>Selecione o Status</option>
-                    <option>Aplicado</option>
-                    <option>Entrevista</option>
-                    <option>Oferta</option>
-                    <option>Rejeitada</option>
-                </select>
-            </div>
-            <div class="containerbtns">
-                <button id="btnSave">Salvar</button>
-                <button id="btnCancel">Cancelar</button>
-            </div>
-        </div>
-    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
